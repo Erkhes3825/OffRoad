@@ -428,13 +428,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 1, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 479582457}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!114 &330585547
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -665,7 +665,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3815585905207716723, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 330585546}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4579776975728692146, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
       insertIndex: -1
@@ -681,34 +684,8 @@ PrefabInstance:
       addedObject: {fileID: 24565647}
     - targetCorrespondingSourceObject: {fileID: 4579776975728692146, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 479582455}
-    - targetCorrespondingSourceObject: {fileID: 4579776975728692146, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 479582456}
   m_SourcePrefab: {fileID: 100100000, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
---- !u!114 &479582455
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 24565641}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76f1c7a856a683a4cb02b8e0bb15ccf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CarVisualEffects
-  carBody: {fileID: 0}
-  frontLeftWheel: {fileID: 0}
-  frontRightWheel: {fileID: 0}
-  rearLeftWheel: {fileID: 0}
-  rearRightWheel: {fileID: 0}
-  wheelRadius: 0.4
-  maxSteerAngle: 30
-  steerSmooth: 10
-  maxRollAngle: 6
-  maxPitchAngle: 4
-  bodyTiltSmooth: 8
 --- !u!114 &479582456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -732,6 +709,11 @@ MonoBehaviour:
   maxRollAngle: 6
   maxPitchAngle: 4
   bodyTiltSmooth: 8
+--- !u!4 &479582457 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3815585905207716723, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &635823529 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4901479205816371614, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
@@ -805,7 +787,6 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 330585546}
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 479582453}
