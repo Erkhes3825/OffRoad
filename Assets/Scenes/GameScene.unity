@@ -253,7 +253,7 @@ MonoBehaviour:
   boostMultiplier: 1.6
   turnSpeed: 120
   gripStrength: 4.5
-  groundCheckDistance: 1.2
+  groundCheckDistance: 2
   airStabilizeSpeed: 3
 --- !u!54 &24565644
 Rigidbody:
@@ -342,6 +342,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.1648164, y: 2.054371, z: 5.086671}
   m_Center: {x: 0.07670522, y: -0.52718556, z: -0.06786919}
+--- !u!114 &24565649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24565641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76f1c7a856a683a4cb02b8e0bb15ccf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CarVisualEffects
+  carBody: {fileID: 635823529}
+  frontLeftWheel: {fileID: 1301308522}
+  frontRightWheel: {fileID: 2119837353}
+  rearLeftWheel: {fileID: 399279889}
+  rearRightWheel: {fileID: 1422685248}
+  wheelRadius: 0.4
+  maxSteerAngle: 30
+  steerSmooth: 10
+  maxRollAngle: 6
+  maxPitchAngle: 4
+  bodyTiltSmooth: 8
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +502,11 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!4 &399279889 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2969691615405266919, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -674,7 +702,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4579776975728692146, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
       insertIndex: -1
       addedObject: {fileID: 24565647}
+    - targetCorrespondingSourceObject: {fileID: 4579776975728692146, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 24565649}
   m_SourcePrefab: {fileID: 100100000, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+--- !u!4 &635823529 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4901479205816371614, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +760,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1301308522 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7568343285541328140, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1422685248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5727926798855718423, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2119837353 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8118650225691260094, guid: db5ea2fd499b45f4bb203e202223a191, type: 3}
+  m_PrefabInstance: {fileID: 479582453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
